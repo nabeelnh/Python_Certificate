@@ -1,0 +1,10 @@
+#!/usr/local/bin/python3.8
+
+# Floating-point accuracy
+
+# Floating-point numbers are stored as * binary fractions * in memory
+## Not all decimals can be represented as binary fractions
+
+e.g. 0.1 
+is approx. as follows by a computer
+0.100000000000000005551115123125
