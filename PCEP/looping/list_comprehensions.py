@@ -1,5 +1,7 @@
 #!/usr/local/bin/python3.8
 
+# No true benefit - some people might write code this different way and you should learn to be 
+#                   familiar with it.
 
 ####################################
 # LOOPING EXAMPLE

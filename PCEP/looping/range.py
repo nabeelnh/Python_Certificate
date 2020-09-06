@@ -25,12 +25,14 @@ print('\nWhile loop vs. For loop with range\n')
 ##############################################
 
 print('While loop')
+
 count = 1
 while count <= 3:
     print('looping')
     count += 1
 
 print('\nfor loop')
+
 for _ in range(1, 4):                   # _ conventional way of indicating you don't care what the variable is
     print('looping')
 

@@ -39,6 +39,7 @@ i.e. it will not go to the next itteration.
 print ('\nBreak CONDITION\n')
 
 count = 1
+
 while count < 10:
     if count % 2 == 0:
         count += 1
