@@ -6,32 +6,31 @@
 # EXAMPLE
 ########################################
 
-def gen_range(stop, start=1, step=1):
+def gen_range(stop, start=1, step=1):       # start=1 and step=1 are defaults
     count = start
     while count <= stop:
-        yield count                    # yield is like a return for generators
-        count += 1
+        yield count                         # yield is like a return for generators
+        count += step
 
-generator = gen_range(5)               # sets the range i.e. stop value. In this rage, 5 is max
-#                                        The stop value is mandatory. The rest are optional with default value
+generator = gen_range(5)                    # set the stop value. aka gen_range(5, start=1, step=1)
 
-print ( next(generator) )               # 1
-print ( next(generator) )               # 2
-print ( next(generator) )               # 3
-print ( next(generator) )               # 4
-print ( next(generator) )               # 5
-# print ( next(generator) )               # error - it's out of the range: 5
+
+'''
+unlike ranges and normal while loops, a generator loop will stop completely
+under each loop and will need to be called.
+'''
+print ( next(generator) )                   # 1
+print ( next(generator) )                   # 2
+print ( next(generator) )                   # 3
+print ( next(generator) )                   # 4
+print ( next(generator) )                   # 5
+# print ( next(generator) )                 # error - it's out of the range: 5
 
 
 ########################################
 # PRATICAL APPLICATION
 ########################################
-def gen(stop, start=1, step=1):
-    count = start
-    while count <= stop:
-        yield count                    # yield is like a return for generators
-        count += 1
+print('\nPractical Application:')           
 
-    
-    for number in gen(10, step=2):
-        print(number)                      # 
+for each_number in gen_range(10, step=2):
+    print(each_number)                      # this is an alternative of calling the gen each time
