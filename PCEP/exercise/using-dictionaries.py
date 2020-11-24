@@ -1,15 +1,12 @@
-#!/usr/local/bin/python3.8
-
 # 1) Set the emails variable to be an empty dictionary
 emails = {}
 print(emails)
-
 assert emails == {}, f"Expected `emails` to be {{}} but got: {repr(emails)}"
 
 # 2) Add 'ashley', 'craig', and 'elizabeth' to the emails dictionary without reassigning the variable.
-emails['ashley'] = 'ashley@example.com'
-emails['craig'] = 'craig@example.com'
-emails['elizabeth'] = 'elizabeth@example.com'
+emails["ashley"] = "ashley@example.com"
+emails["craig"] = "craig@example.com"
+emails["elizabeth"] = "elizabeth@example.com"
 print(emails)
 
 assert emails == {
@@ -19,7 +16,7 @@ assert emails == {
 }, f"Expected `emails` to be {{'ashley': 'ashley@example.com', 'craig': 'craig@example.com', 'elizabeth': 'elizabeth@example.com'}} but got: {repr(emails)}"
 
 # 3) Remove 'craig' from the emails dictionary without reassigning the variable.
-del emails['craig']
+del emails["craig"]
 print(emails)
 
 assert emails == {
@@ -28,7 +25,7 @@ assert emails == {
 }, f"Expected `emails` to be {{'ashley': 'ashley@example.com', 'elizabeth': 'elizabeth@example.com'}} but got: {repr(emails)}"
 
 # 4) Add 'dalton' to the emails dictionary without reassigning the variable.
-emails['dalton'] = 'dalton@example.com'
+emails["dalton"] = "dalton@example.com"
 print(emails)
 
 assert emails == {
@@ -59,7 +56,6 @@ assert email_list == [
 
 # 7) Return a list of tuples called `pairs` representing the key/value pairs in `emails`.
 pairs = list(emails.items())
-print(pairs)
 
 assert pairs == [
     ("ashley", "ashley@example.com"),
