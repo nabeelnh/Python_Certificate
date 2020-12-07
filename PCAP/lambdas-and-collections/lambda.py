@@ -1,18 +1,9 @@
-
-print("FUNCTION:")
-### - multiple expression
-
+# A function can take multiple expressions
 def addition(var1, var2):
-    print("This is from the function: ", end="")    # expression 1
-    sum = var1 + var2                               # expression 2
-    return sum                                      # expression 3
+    return var1 + var2
 
-print(addition(2,2))
+print (addition(5, 5))
 
-print("\nLAMBDA: ", end="")
-### - only one expression
-
-lambda_add = lambda variable1, variable2: variable1 + variable2                   # Single expression (implcitly always returned)
-# variabe = lambda(keyword) parameter1, parameter2 ...: <expression>
-
-print(lambda_add(3, 3))
+# A lambda can take only a single expression
+addition = lambda var1, var2: var1 + var2
+print (addition(10, 10))
